@@ -1,15 +1,12 @@
 /*
-    JaCaMo Application File Template
-    --------------------------------
-
-    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
-
-    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
-
-    JaCaMo 1.2
+    Smart Home - Versao de Teste (Sem GUI)
+    ---------------------------------------
+    
+    Esta versao executa testes automaticos dos 3 cenarios
+    sem necessidade de interface grafica.
 */
 
-mas smart_home {
+mas smart_home_test {
 
     // Security agents
     agent camera: camera.asl
@@ -21,6 +18,9 @@ mas smart_home {
     // Lighting control agents
     agent lampada: lampada.asl
     agent cortina: cortina.asl
+    
+    // Test agent
+    agent teste: teste_automatico.asl
 
     workspace casa {
       // Artifacts are created by agents during initialization
